@@ -17,3 +17,7 @@ config.ini
 ```
 - 重启自动刷机
 
+
+# mksbin.zip
+
+原版固件， 可在[https://baizhongyun.cn/home/mkstoolview](https://baizhongyun.cn/home/mkstoolview)生成

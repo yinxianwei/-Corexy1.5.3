@@ -1,3 +1,6 @@
 [submodule "Marlin"]
 	path = Marlin
 	url = https://github.com/MarlinFirmware/Marlin.git
+[submodule "ESP3D"]
+	path = ESP3D
+	url = https://github.com/luc-github/ESP3D.git

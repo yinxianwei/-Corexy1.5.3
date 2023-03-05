@@ -1,0 +1,77 @@
+>cfg_firmware_type: 1     # 请选择  1:marlin  2:repetier  3:smoothie
+>cfg_machine_type: 1     # 请选择  1:Normal  2:Delta
+>cfg_baud_rate: 4     # 请选择  1:9600  2:57600  3:115200  4:250000
+>cfg_multiple_language: 1     # 请选择  1:使能  0:不使能
+>cfg_language_type: 1     # 此配置项只有在"多国语言显示"为"字体图片显示"时有效  1:简体中文  2:繁体中文  3:English  4:俄语  5:西班牙语  6:法语  7:意大利语
+>cfg_sprayer_counter: 1     # 配置挤出头个数  1:单喷头  2:双喷头
+>cfg_custom_bed_flag: 1     # 请选择  1:使能热床  0:禁止热床
+>cfg_max_sprayer_temperature: 270     # 挤出头最大目标温度
+>cfg_max_hotbed_temperature: 80     # 热床最大目标温度
+>cfg_XPOS: -1     # X轴暂停位置,-1无效
+>cfg_YPOS: -1     # Y轴暂停位置,-1无效
+>cfg_ZADD: 10     # Z轴暂停位置(相对位置),-1无效
+>cfg_insert_det_module: 0     # 接入断电检测模块  1:MKS 220det  0:MKS pwc
+>cfg_have_ups_device: 0     # 机器是否配备UPS电源  1:是  0:否
+>cfg_print_finish_close_Machine: 0     # 打完关机配置,需搭配“打完关机模块”使用  1:开启  0:关闭
+>cfg_filament_det_trigger_level: 0     # 当PB0作为第二喷头断料接口时,PB0触发信号配置  1:高电平触屏  0:低电平触发
+>cfg_PB1_trigger_Level: 0     # 断料接口PB1电平配置  1:高电平触屏  0:低电平触发
+>cfg_breakpoint_z_error: 0.2     # 断点续打Z轴误差配置
+>cfg_filament_load_length: 200     # "换料"进料的长度,最长为2000mm，超过此长度挤出电机不动
+>cfg_filament_load_speed: 1200     # "换料"进料速度配置(mm/min)
+>cfg_filament_unload_length: 200     # "换料"退料的长度,最长为2000mm，超过此长度挤出电机不动
+>cfg_filament_unload_speed: 1200     # "换料"退料速度配置(mm/min)
+>cfg_filament_load_limit_temperature: 200     # "换料"温度配置,此温度值是在进退料时最低温度。如当前温度没达到，则自动加热。
+>cfg_unload_retract_length: 2     # "换料"退料时先进料的长度,最长为2000mm，超过此长度挤出电机不动
+>cfg_unload_retract_speed: 1200     # "换料"退料速度配置(mm/min)
+>cfg_leveling_mode: 0     # 调平模式配置  1:自动调平  0:手动调平  2:不显示调平按钮
+>cfg_point_number: 4     # 手动调平的个数  3:3  4:4  5:5
+>cfg_point1: 50,50     # 手动调平时的第一点的位置坐标(x,y)
+>cfg_point2: 180,50     # 手动调平时的第二点的位置坐标(x,y)
+>cfg_point3: 180,180     # 手动调平时的第三点的位置坐标(x,y)
+>cfg_point4: 50,180     # 手动调平时的第四点的位置坐标(x,y)
+>cfg_point5: 150,150     # 手动调平时的第五点的位置坐标(x,y)
+>cfg_auto_leveling_cmd: G28;G29;     # 调平按钮的发送指令，一般情况下，marlin用G29;repetier和smoothie用G32，每条指令用";"隔开
+>cfg_leveling_z_speed: 1500     # 调平移动Z速度配置(mm/min)
+>cfg_leveling_xy_speed: 3000     # 调平移动XY速度配置(mm/min)
+>cfg_wifi_type: 0     # WIFI模式  0:MKS WIFI TFT  1:MKS HLK-WIFI
+>cfg_wifi_mode: 1     # WIFI模式  0:STA  1:AP
+>cfg_wifi_ap_name: Makerbase     # WIFI名称 AP:Wifi模块的名称；STA：所连接路由器的名称。
+>cfg_wifi_key_code: makerbase     # WIFI密码 AP:Wifi模块的密码；STA：所连接路由器的密码。
+>cfg_cloud_enable: 1     # 云服务使能  0:禁用  1:使能
+>cfg_wifi_cloud_host: www.baizhongyun.cn     # 云服务地址
+>cfg_cloud_port: 10086     # 云服务端口
+>cfg_ip_dhcp_flag: 1     # 动态获取IP
+>cfg_ip_address: 192.168.3.100     # IP address
+>cfg_ip_mask: 10255.255.255.0086     # 掩码
+>cfg_ip_gate: 192.168.3.1     # 网关
+>cfg_function_btn1_display: 1     # 设置界面下的"功能"按钮  0:不显示  1:显示
+>function_btn1_cmd: M84;     # 设置界面自定义功能1指令,每条指令必须用分号";"隔开
+>moreitem_pic_cnt: 0     # "更多"按钮数量
+>moreitem_button1_cmd: G28 X0;     # 按钮1指令定制,每条指令必须用分号";"隔开
+>moreitem_button2_cmd: G28 X0;     # 按钮2指令定制,每条指令必须用分号";"隔开
+>moreitem_button3_cmd: G28 Y0;     # 按钮3指令定制,每条指令必须用分号";"隔开
+>moreitem_button4_cmd: G28 Y0;     # 按钮4指令定制,每条指令必须用分号";"隔开
+>moreitem_button5_cmd: G28 Z0;     # 按钮5指令定制,每条指令必须用分号";"隔开
+>moreitem_button6_cmd: G28 Z0;     # 按钮6指令定制,每条指令必须用分号";"隔开
+>moreitem_button7_cmd: G28;     # 按钮7指令定制,每条指令必须用分号";"隔开
+>morefunc_cnt: 0     # 打印界面"更多"按钮数量
+>morefunc1_cmd: G28;     # 打印界面"更多"按钮1指令定制,每条指令必须用分号";"隔开
+>morefunc2_cmd: G28;     # 打印界面"更多"按钮2指令定制,每条指令必须用分号";"隔开
+>morefunc3_cmd: G28;     # 打印界面"更多"按钮3指令定制,每条指令必须用分号";"隔开
+>morefunc4_cmd: G28;     # 打印界面"更多"按钮4指令定制,每条指令必须用分号";"隔开
+>morefunc5_cmd: G28;     # 打印界面"更多"按钮5指令定制,每条指令必须用分号";"隔开
+>cfg_background_color: 0x000000     # 屏幕背景色
+>cfg_title_color: 0xffffff     # 标题文字颜色
+>cfg_state_background_color: 0x000000     # 温度等状态背景色
+>cfg_state_text_color: 0xffffff     # 温度等状态文字颜色
+>cfg_filename_background_color: 0x000000     # 文件按钮上文件名字体背景色
+>cfg_filename_color: 0xffffff     # 文件按钮上文件名字体颜色
+>cfg_printingstat_word_background_color: 0x000000     # 打印状态信息字体背景色
+>cfg_printingstat_word_color: 0xffffff     # 打印状态信息字体颜色
+>cfg_BUTTON_3D_effects: 0     # 按钮3D效果  0:无  1:有
+>cfg_OVERTURN_180: 0x00     # 屏幕翻转180°  0x00:不翻转  0xEE:翻转
+>cfg_disable_PWR_det: 0     # 断电检测功能  0:不屏蔽  1:屏蔽
+>cfg_disable_MT_det: 0     # 断料检测功能  0:不屏蔽  1:屏蔽
+>cfg_single_nozzle: 0     # 支持双进一出机型  0:不支持  1:支持
+>cfg_M110_add_checkSum: 0     # 对M110指令加校验,Marlin1.0.2版本及以下的版本设置为1，其他版本设置为0  0:其他版本  1:Marlin1.0.2版本及以下的版本
+>cfg_display_eeror_message: 0     # 开启报错功能  0:不开启  1:开启

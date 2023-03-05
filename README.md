@@ -5,8 +5,8 @@
 # 配置
 
 - vscode + platformio + marlin2.1.x
-- MKS_GEN_L_V21
-- MKS_TFT_32
+- [MKS_GEN_L_V21](https://github.com/makerbase-mks/MKS-GEN_L/wiki/MKS_GEN_L_V2)
+- [MKS_TFT_32](https://github.com/makerbase-mks/MKS-TFT-Hardware)
 - USB打印线
 
 # 下载
@@ -73,16 +73,17 @@ git submodule update
 
 #define SDSUPPORT
 #define REPRAP_DISCOUNT_SMART_CONTROLLER
-
+#define EEPROM_SETTINGS
+#define EEPROM_AUTO_INIT
 ```
 
 ## Configuration_adv.h
 
 ```
 # 双z轴
-#define Z_MULTI_ENDSTOPS          // Other Z axes have their own endstops
+#define Z_MULTI_ENDSTOPS
 
-# TMC2208可开启
+# TMC可开启
 #define HYBRID_THRESHOLD
 ```
 
